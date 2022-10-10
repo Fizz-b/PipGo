@@ -1,0 +1,203 @@
+  .house-item {
+      border-radius: 0.5rem;
+      //box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+      
+      /*
+      border-color: rgb(221, 223, 226);
+      border-style: solid;
+      border-width: 1px;
+      box-shadow: none;  */
+      background: white;
+      
+      // dang dung 
+      box-shadow: 0px 1px 2px rgb(3 18 26 / 20%);
+      .house-img {
+          height: 20%;
+          width: 100%;
+          border-top-left-radius: 0.5rem;
+          border-top-right-radius: 0.5rem;
+
+          img {
+              // border-top-left-radius: 0.5rem;
+              // border-top-right-radius: 0.5rem;
+              border-radius: 0.5rem;
+              object-fit: cover;
+              width: 100%;
+
+              height: 164px;
+          }
+      }
+
+      .house-content {
+          padding: 0.95rem;
+
+          .house-name {
+              h3 {
+                  margin: 0 0 0.8rem;
+                  border-bottom: solid 1px rgb(221, 223, 226);
+                  padding-bottom: 1rem;
+              }
+          }
+
+          .house-intro {
+              // width: 85%;
+              font-size: 0.95rem;
+              opacity: 0.95;
+              display: flex;
+              flex-direction: column;
+
+              .intro-item {
+                  display: flex;
+                  flex-direction: row;
+                  border-bottom: solid 1px rgb(221, 223, 226);
+
+
+                  p {
+                      margin: 0;
+                      padding-bottom: 0.8rem;
+                      padding-top: 0.3rem;
+                      font-size: 0.85rem;
+                      color: #282828;
+                      letter-spacing: 0.004em;
+                  }
+
+                  svg {
+                      padding-right: 0.2rem;
+                      font-size: 1.9rem;
+                  }
+
+                  .total-icon {
+                      color: rgba(0, 128, 0, 0.618);
+                  }
+
+                  .total {
+                      // font-weight: 700;
+                      // font-size: 1.2rem;
+                  }
+
+              }
+
+              button {
+                  margin-top: 0.8rem;
+                  // width: 50%;
+                  // max-width: 50%;
+                  padding: 0.5rem 0.9rem;
+                  border-radius: 0.8rem;
+                  font-size: 0.8rem;
+                  color: white;
+                  background-color: #1e62d8;
+                  font-weight: 700;
+                  border: none;
+              }
+
+              .intro-price {
+                  padding: 0.4rem 0;
+                  display: flex;
+                  flex-direction: row;
+                  // border-bottom: solid 1px rgb(221, 223, 226);
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+
+                  .room-type {
+                      font-weight: 800;
+                      // chinh width khi can
+                      // width: 20%;
+                  }
+
+                  .house-price {
+                      margin-top: 0.8rem;
+                      margin-bottom: 0.5rem;
+                      // text-align: right;
+                      color: #ef0107;
+                      font-weight: 700;
+                      // line-height: 1.2rem;
+                      font-size: 1.1rem;
+                      word-wrap: break-word;
+                      width: 50%;
+
+                      // width: 35%;
+                      button {
+                          padding: 0.5rem 1.2rem;
+                          border-radius: 0.3rem;
+                          color: white;
+                          background-color: #1e62d8;
+                          font-weight: 700;
+                          border: none;
+                          max-width: 30%;
+                      }
+                  }
+
+              }
+          }
+
+
+
+          .house-total {}
+
+
+      }
+  }
+
+  @media screen and (min-width: 486px) {
+      .house-item {
+          flex-basis: 30%;
+          width: 450px;
+          height: 380px;
+
+
+
+      }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+      .house-item {
+          flex-basis: 40%;
+          width: 300px;
+         height: auto;
+
+          .house-content {
+
+
+
+
+              .intro-price {
+
+
+
+
+                  .house-price {
+
+                      width: 35%;
+
+                  }
+              }
+
+          }
+      }
+  }
+
+  @media screen and (min-width: 1201px) {
+      .house-item {
+          flex-basis: 32%;
+           height: auto;
+          .house-content {
+
+              .house-intro {
+
+
+                  .intro-price {
+
+
+
+
+                      .house-price {
+
+                          width: 35%;
+
+                      }
+                  }
+              }
+          }
+      }
+  }

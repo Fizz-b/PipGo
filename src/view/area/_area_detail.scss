@@ -1,0 +1,283 @@
+.area-details {
+  padding-top: 100px;
+  background: #f4f4f4;
+  margin: 0 ;
+  padding-bottom: 100px;
+  
+  .area-sticky {
+    position: fixed;
+    bottom: 0;
+    padding: 0.2rem;
+    z-index: 99;
+    background: white;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .area-name {
+      padding: 0.3rem 0;
+
+      p {
+        margin: 0;
+        font-size: 0.8rem;
+      }
+
+      .name-title {}
+
+      .area-price {
+        color: #ef0107;
+        font-weight: 700;
+        font-size: 1.1rem;
+      }
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border: none;
+      color: white;
+      background-color: #4361ee;
+      border-radius: 0.3rem;
+      font-size: 0.9rem;
+      height: 30%;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:20px 0;
+    .title {
+      padding: 1rem 0 0rem 1rem;
+      margin: 0;
+      // border-top: solid 1px rgb(221, 223, 226);
+      // font-size: 28px;
+      // line-height: 35px;
+      letter-spacing: 0.004em;
+      background: white;
+
+    }
+
+
+    .area-info {
+      box-shadow: rgb(67 71 85 / 27%) 0px 0px 0.25em, rgb(90 125 188 / 5%) 0px 0.25em 1em;
+      padding: 1.2rem;
+      margin: 1rem 0.5rem;
+      background: white;
+      border-radius: 8px;
+      // border-color: rgb(221, 223, 226);
+      // border-style: solid;
+      // border-width: 1px;
+      // box-shadow: none;
+
+
+
+      .area-name {}
+
+      .area-desc {
+        p {
+          //  width: 90%;
+        }
+      }
+
+      button {
+        padding: 10px 25px;
+        cursor: pointer;
+        border: none;
+        color: white;
+        background-color: #1e62d8;
+        font-weight: 700;
+        font-size: 1.05rem;
+        border-radius: 0.3rem;
+      }
+    }
+
+
+    h1 {
+      margin: 1rem 0 0.8rem 0.5rem;
+
+    }
+
+    .houses {
+      box-shadow: rgb(67 71 85 / 27%) 0px 0px 0.25em, rgb(90 125 188 / 5%) 0px 0.25em 1em;
+      background: white;
+      border-radius: 8px;
+      padding: 0.5rem 0 0 0rem;
+      .house-lists {
+
+        display: flex;
+        padding: 0.6rem;
+        flex-direction: column;
+        gap: 0.8rem 0.5rem;
+
+        margin: 1rem 0.5rem;
+
+
+
+      }
+    }
+
+    .services {
+      box-shadow: rgb(67 71 85 / 27%) 0px 0px 0.25em, rgb(90 125 188 / 5%) 0px 0.25em 1em;
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      .service-list {
+
+        display: flex;
+        padding: 0.6rem;
+        flex-direction: column;
+        gap: 0.8rem 0.5rem;
+
+
+        margin: 1rem 0.5rem;
+
+
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 486px) {
+  .area-details {
+    .container {
+     
+      .houses {
+        .house-lists {
+          align-items: center;
+
+
+        }
+      }
+
+      .services {
+        .service-list {
+          align-items: center;
+
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .area-details {
+    .container {
+     
+      .area-info {
+        .area-name {}
+
+        .area-desc {}
+      }
+
+
+
+      .houses {
+        .house-lists {
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          gap: 1.2rem 1.8rem;
+
+
+        }
+      }
+
+      .services {
+        .service-list {
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          gap: 1.2rem 1.8rem;
+
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .area-details {
+    padding: 90px 110px 100px 80px;
+    
+    .area-sticky {
+
+      box-shadow: rgb(27 27 27 / 10%) 0px 4px 8px 0px, rgb(27 27 27 / 10%) 0px 1px 3px 0px;
+      background-color: rgba(255, 255, 255, 1.00);
+
+      box-shadow: none;
+      border: none;
+      position: fixed;
+      height: 70px;
+      padding: 10px;
+      width: 100%;
+
+      button {
+        height: 65%;
+        padding: 0px 25px 0px;
+      }
+    }
+
+    .container {
+      padding: 0px 100px;
+      gap: 50px 0;
+
+      .title {
+        border-top-right-radius: 8px;
+        border-top-left-radius:8px ;
+        padding: 2rem 0 1.5rem 1rem;
+        margin: 0;
+      }
+
+      .area-info {
+        margin: 0rem 0;
+         width: 100%;
+        .area-name {}
+
+        .area-desc {}
+      }
+
+
+
+      /*  hide sticky
+     .area-sticky{
+      display: none;
+    }
+    */
+
+
+      .houses {
+        .house-lists {
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          gap: 1.4rem 0.9rem;
+          background: white;
+
+
+        }
+      }
+
+      .services {
+        .service-list {
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          gap: 1.4rem 0.9rem;
+          background: white;
+
+
+        }
+      }
+    }
+  }
+}
