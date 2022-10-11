@@ -106,6 +106,7 @@
       background: white;
       border-radius: 8px;
       padding: 0.5rem 0 0 0rem;
+      width:100%;
       .house-lists {
 
         display: flex;
@@ -125,6 +126,7 @@
       background: white;
       border-radius: 8px;
       padding: 1rem;
+      width: 100%;
       .service-list {
 
         display: flex;
@@ -205,7 +207,7 @@
 
 @media screen and (min-width: 1201px) {
   .area-details {
-    padding: 90px 110px 100px 80px;
+   // padding: 90px 110px 100px 80px;
     
     .area-sticky {
 

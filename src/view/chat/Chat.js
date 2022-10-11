@@ -3,16 +3,16 @@ import Message from "../../component/Chat/Message";
 import Input from "../../component/Chat/Input";
 import "./_chat.scss";
 import { auth, db } from "../../config/firebase";
-import firebase from "firebase";
+import firebase from "firebase/app";
 
-
-
+import { AuthContext } from "../../context/AuthContext";
+import "./_chat.scss"
 function Chat() {  
-  const { currentUser } = useContext() ;
+  const {currentUser}  = useContext(AuthContext) ;
 
   const [roomId, setRoomId] = useState("");
   useEffect(() => {
-    /*
+    
     const getRooms = async () => {
       const roomRef = await db.collection("rooms").add({
         ownerId: currentUser.uid,
@@ -23,7 +23,7 @@ function Chat() {
       setRoomId(roomRef.id);
     };
     getRooms();
-    console.log("Im render")*/
+    console.log("Im render")
   }, []);
 
   return (

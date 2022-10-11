@@ -1,17 +1,26 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
 import HouseItem from "../../component/House/HouseItem";
 import ServiceItem from "../../component/House/ServiceItem";
 import ImageList from "../../component/ImageList/ImageList";
 import useScroll from "../../hooks/useScroll";
 import "./_area_detail.scss";
 
-
+import Modal
+ from "../../component/Modal/Modal";
 //tach service list thanh component rieng
 function AreaDetails() {
   const [visible, setVisible] = useScroll(600);
-  
+   const [openModal, setOpenModal] = useState(false);
+  const navigate = useNavigate();
+   const handleClick = ()=>{
+      setOpenModal(true);
+    // navigate("/chat");
+   }
   
   return (
+    <>
+     <Modal open={openModal} onClose={() => setOpenModal(false)} />
     <section className="area-details">
       {visible && (
         <div className="area-sticky">
@@ -20,7 +29,7 @@ function AreaDetails() {
             <p className="area-price">400.000 - 500.000 đ</p>
             <p className="name-title">/đêm</p>
           </div>
-          <button>Tư vấn ngay</button>
+          <button onClick={handleClick}>Tư vấn ngay</button>
         </div>
       )}
       <div className="container">
@@ -36,7 +45,7 @@ function AreaDetails() {
             </p>
           </div>
           <div className="button">
-            <button>Tư vấn ngay</button>
+            <button onClick={handleClick}>Tư vấn ngay</button>
           </div>
         </div>
 
@@ -66,6 +75,7 @@ function AreaDetails() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

@@ -169,17 +169,21 @@
      
       
           form {
+            align-items: center;
+           
+            padding: 1.8rem;
           .search{
             // flex-direction: row;
-           
+              
           }
           }
       
         }
        .area-results {
+       
          .area-lists {
-          
-          gap: 1rem 1.4rem;
+          padding-top: 2rem;
+          gap: 1.6rem 1.6rem;
           
            /*
           .area-item {
@@ -206,10 +210,11 @@
    .area {
      .container {
        .area-container {
-        
+     
         padding: 0 0.8rem;
         
         form{
+          
         .fixed {
             padding-right: 0.5rem;
             padding: 0.5rem 0.5rem;

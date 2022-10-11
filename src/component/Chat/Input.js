@@ -24,8 +24,8 @@ function Input(props) {
   // useEffect when chosen emoji change
   const [chosenEmoji, setChosenEmoji] = useState();
   const [showEmoji, setShowEmoji] = useState(false);
-  const [files, setFiles] = useState<FileList | null>(null);
-  const fileRef = useRef<HTMLInputElement>(null);
+  const [files, setFiles] = useState(null);
+  const fileRef = useRef(null);
   const [text, setText] = useState("");
   const { currentUser } = useContext(AuthContext);
   // console.log("User:" + currentUser.uid);

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useContext, useState } from "react";
 
 import { AuthContext, AuthContextType } from "../../context/AuthContext";
-
+import useFirebase from "../../hooks/useFirebase";
 import "./_message.scss"
 
 /*
@@ -37,7 +37,7 @@ function Message(props) {
     [props.roomId],
   );
  
-  /*
+  
   const messages = useFirebase("messages", condition, {
     type: "asc",
     size: 50,
@@ -49,11 +49,11 @@ function Message(props) {
       messageListRef.current.scrollTop =
         messageListRef.current.scrollHeight + 50;
     }
-  }, [messages]); */
+  }, [messages]); 
 
   return (
     <div className="message-container" ref={messageListRef}>
-      {/*
+      
       {messages.map((mes) =>
         mes.uid === currentUser.uid ? (
           <div className="local" key={mes.id}>
@@ -76,7 +76,7 @@ function Message(props) {
           </div>
         ),
       )}
-       */}
+       
     </div>
   );
 }
