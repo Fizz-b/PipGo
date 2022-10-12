@@ -3,10 +3,13 @@ import ServiceItem from "../../component/House/ServiceItem";
 import ImageList from "../../component/ImageList/ImageList";
 import useScroll from "../../hooks/useScroll";
 import "./house.scss";
+import { useParams } from "react-router";
 function House() {
    const [visible, setVisible] = useScroll(600);
   
-  
+  const { areaId,houseId } = useParams();
+  console.log("Areaid:" + areaId);
+  console.log("Houseid:" + houseId);
   return (
     <section className="area-details">
       {visible && (

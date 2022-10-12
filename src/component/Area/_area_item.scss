@@ -1,12 +1,10 @@
  .area-item {
      display: flex;
      flex-direction: column;
+        background: white;
      // flex-direction: row;
-     background: white;
      // margin: 0.2rem 1rem;
-    
      /*
-     
      border-color: rgb(221, 223, 226);
      border-style: solid;
      border-width: 1px; 
@@ -33,14 +31,13 @@
      .area-content {
          padding: 1rem 1rem;
 
-         .area-name {
+         
              h1 {
                  margin-bottom: 0.8rem;
                  font-size: 0.9rem;
                  line-height: 1.2rem;
              }
-         }
-
+         
          .area-desc {
              font-size: 0.95rem;
          }

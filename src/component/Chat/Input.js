@@ -160,7 +160,7 @@ function Input(props) {
 
   return (
     <>
-      <div className="chat-container">
+      <div className="input-container">
         <input
           type="text"
           value={text}

@@ -5,14 +5,16 @@ import ServiceItem from "../../component/House/ServiceItem";
 import ImageList from "../../component/ImageList/ImageList";
 import useScroll from "../../hooks/useScroll";
 import "./_area_detail.scss";
-
+import { useParams } from "react-router";
 import Modal
  from "../../component/Modal/Modal";
 //tach service list thanh component rieng
 function AreaDetails() {
   const [visible, setVisible] = useScroll(600);
    const [openModal, setOpenModal] = useState(false);
+   const {areaId} = useParams();
   const navigate = useNavigate();
+  console.log("Areaid:"+areaId);
    const handleClick = ()=>{
       setOpenModal(true);
     // navigate("/chat");
